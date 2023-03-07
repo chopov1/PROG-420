@@ -1,7 +1,9 @@
 
 #include "players.h"
 
-int main (int argc, char ** argv){
+
+
+int main (){
     std::cout<<"start"<<std::endl;
     Deck d = Deck();
     d.ShuffleDeck();
