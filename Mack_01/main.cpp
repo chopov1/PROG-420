@@ -1,9 +1,11 @@
 #include <iostream>
 
-//cmake only wanted to make visual studio projects, so i decided to use gnu compiler instead if that is okay
+//RUN PROJECT
+//cmake should work on docker, am using gnu for development
 //to compile use g++ -o executablename main.cpp
 //use ./executablename to run
 
+//DEBUGGING
 //gdb executablename (no extension)
 //type quit to quit gdb
 //use -g flag when compiling to allow debugging (g++ main.cpp -g -o executablename.exe)
