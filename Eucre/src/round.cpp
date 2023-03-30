@@ -30,10 +30,10 @@ void Round::playGame(){
 }
 
 bool Round::gameHasEnded(){
-    if(t1.Tricks >= pointsToWin){
+    if(t1.Points >= pointsToWin){
         return true;
     }
-    if(t2.Tricks >= pointsToWin){
+    if(t2.Points >= pointsToWin){
         return true;
     }
     return false;
@@ -95,15 +95,15 @@ void Round::DetermineWinner(Card trump, std::vector<Card> table){
     Card winner = c.getWinningCard();
     std::cout << winner.PrintCard() <<" WINNING CARD" << std::endl;
     if(t1.teamHasCard(winner)){
-        t1.Tricks++;
+        t1.Points++;
         t2.checkIfPointsLost();
     }
     else if(t2.teamHasCard(winner)){
-        t2.Tricks++;
+        t2.Points++;
         t1.checkIfPointsLost();
     }
-    std::cout << "TEAM 1 has taken: " << t1.Tricks << " tricks" << std::endl;
-    std::cout << "TEAM 2 has taken: " << t2.Tricks << " tricks" << std::endl;
+    std::cout << "TEAM 1 has taken: " << t1.Points << " tricks" << std::endl;
+    std::cout << "TEAM 2 has taken: " << t2.Points << " tricks" << std::endl;
     
 }
 

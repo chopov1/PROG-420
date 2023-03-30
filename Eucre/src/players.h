@@ -27,7 +27,7 @@ class Team{
     Player p1;
     Player p2;
     std::string TeamName;
-    int Tricks;
+    int Points;
     
 
     Team(std::string name);

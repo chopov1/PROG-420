@@ -39,9 +39,9 @@
 
 
     Team::Team(std::string name)
-        :p1(1,name), p2(2,name)
+        :p1(1,name), p2(2,name), TeamName(name)
     {
-        Tricks =0;
+        Points =0;
     };
 
     void Team::DealCards(Deck& deck){
@@ -56,9 +56,9 @@
 
     void Team::checkIfPointsLost(){
         if(p1.choseTrump || p2.choseTrump){
-            if(Tricks - 1 >= 0){
-                Tricks--;
-                std::cout << "The Team" << p1.TeamName << " LOST A POINT" << std::endl;
+            if(Points - 1 >= 0){
+                Points--;
+                std::cout << TeamName << " LOST A POINT" << std::endl;
             }
         }
     }
