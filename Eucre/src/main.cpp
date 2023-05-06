@@ -2,25 +2,6 @@
 #include "round.cpp"
 #include "cardChecker.cpp"
 
-#pragma region REQUIRMENTS
-// DONE You must implement game setup of 4 players 
-
-// DONE you must initialize a standard 28 card euchre deck
-
-// DONE Your eucher deck cannot be passed by value
-
-// DONE You must partition 4 players into 2 teams.
-
-// Each players gets 2 cards in the first deal and 3 cards in the second.
-
-// DONE During the bidding phase if no player calls trump then the round ends and redeal
-
-// players cannot go all-in
-
-// DONE each won hand is 1 point. play uniil a team has won 10 points
-
-// DONE calling trump and losing the hand results in a lost point
-#pragma endregion
 #pragma region notes
 // To set code runner execute command to not be active file, 
 // go to vscode settings

@@ -1,0 +1,6 @@
+5/4/23
+
+maybe handle nickel dime exchange shit in USDAmount class - should kinda mimic datetime structs in c#
+could also make USDAmount a struct, and have a seperate class for getting exact change
+
+make class to get input, as well as one for a gameloop
